@@ -26,5 +26,7 @@ def nomeIP_local():
     maquina = socket.gethostname()
     ip = socket.gethostbyname(maquina)
 
-    printf("Maquina: ", maquina "| "IP: ", ip)
+    print ("Maquina: ", maquina, "| IP: ", ip)
+
+
 
