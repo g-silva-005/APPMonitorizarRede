@@ -22,7 +22,7 @@ print ()
 
 if (opcao == 1):
     print ("A testar ligacao... :)")
-
+    time.sleep(3)
     if (funcoes.testa_ligacao()):
         print ("Sucesso! Tens acesso a internet :)")
     else:

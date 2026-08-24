@@ -48,7 +48,7 @@ def pingIN(ip):
 
     comando = ["ping", parametro, "1", ip]
 
-    resposta = subprocess.call(comando)
+    resposta = subprocess.call(comando, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
     if resposta == 0:
         print ("ping a ",ip, "feito com sucesso!")
