@@ -1,6 +1,6 @@
 import subprocess
 import  platform
-
+import socket
 #-------------------------------------------------------------------------#
 
 def testa_ligacao(host="8.8.8.8"):
@@ -21,3 +21,10 @@ def testa_ligacao(host="8.8.8.8"):
         return False
 
  #-------------------------------------------------------------------------#
+
+def nomeIP_local():
+    maquina = socket.gethostname()
+    ip = socket.gethostbyname(maquina)
+
+    printf("Maquina: ", maquina "|" "IP: ", ip)
+
