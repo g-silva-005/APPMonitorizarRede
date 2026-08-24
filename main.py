@@ -1,4 +1,4 @@
-from asyncio import sleep
+import time 
 import subprocess
 import  platform
 import funcoes
@@ -31,9 +31,10 @@ if (opcao == 1):
 
 if (opcao == 2):
     print ("A descobrir IP Local e Nome da Maquina...")
-    sleep(3)
+    print ()
+    time.sleep(3)
     funcoes.nomeIP_local()
 
-    
+
 
 
