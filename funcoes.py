@@ -28,5 +28,13 @@ def nomeIP_local():
 
     print ("Maquina: ", maquina, "| IP: ", ip)
 
+ #-------------------------------------------------------------------------#
 
+def descobrirIPSite(site):
+    try:
+        ip = socket.gethostbyname(site)
+        print ("O ip do Site ", site, "é: ", ip)
+    except:
+        print ("Nao consegui verificar o IP desse site :( \n Vê se o link do site está okay. ")
+        
 

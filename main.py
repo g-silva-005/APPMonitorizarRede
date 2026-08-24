@@ -29,11 +29,18 @@ if (opcao == 1):
         print ("Infelizmente nao tens internet, verifica o teu wifi ou o teu router :(")
 
 
-if (opcao == 2):
+elif (opcao == 2):
     print ("A descobrir IP Local e Nome da Maquina...")
     print ()
     time.sleep(3)
     funcoes.nomeIP_local()
+
+elif (opcao == 3):
+    print ("Introduz o link do site :)")
+    site = input ("\n : ")
+    time.sleep(3)
+    print()
+    funcoes.descobrirIPSite(site)
 
 
 
