@@ -42,6 +42,11 @@ elif (opcao == 3):
     print()
     funcoes.descobrirIPSite(site)
 
+elif (opcao == 4):
+    ip = input("Introduza o IP que quer fazer o ping: ")
+    time.sleep(3)
+    print()
+    funcoes.pingIN(ip)
 
 
 
