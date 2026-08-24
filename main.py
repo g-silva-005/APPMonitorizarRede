@@ -38,12 +38,14 @@ elif (opcao == 2):
 elif (opcao == 3):
     print ("Introduz o link do site :)")
     site = input ("\n : ")
+    print("A verificar o site...")
     time.sleep(3)
     print()
     funcoes.descobrirIPSite(site)
 
 elif (opcao == 4):
     ip = input("Introduza o IP que quer fazer o ping: ")
+    print("A enviar Pacotes...")
     time.sleep(3)
     print()
     funcoes.pingIN(ip)
