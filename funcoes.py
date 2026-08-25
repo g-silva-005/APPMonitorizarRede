@@ -1,6 +1,8 @@
 import subprocess
 import  platform
 import socket
+import ipaddress
+
 #-------------------------------------------------------------------------#
 
 def testa_ligacao(host="8.8.8.8"):
@@ -55,6 +57,25 @@ def pingIN(ip):
     else:
         print ("que pena, deu erro! Verifica se o ip esta correto")
 
+ #-------------------------------------------------------------------------#
+
+def calculadora(ip_cidr):
+    try:
+        ip = ipaddress.IPv4Address(ip_cidr)
+
+        info = {
+            "rede": str(ip.network_address),
+            "broadcast": str(ip.broadcast_address),
+            "mascara": str(ip.netmask),
+            "hosts_uteis": max(0, ip.num_addresses - 2)
+        }
+
+        return info 
+
+    except:
+
+        return None
+    
 
       
 

@@ -10,7 +10,7 @@ print("======== 1 - Testar Ligacao a Internet            ========")
 print("======== 2 - Ver IP Local e Nome da Maquina       ========")
 print("======== 3 - Descobrir o IP de um Site (DNS)      ========")
 print("======== 4 - Fazer Ping a um IP Personalizado     ========")
-print("======== 5 - Testar se uma Porta TCP esta Aberta  ========")
+print("======== 5 - Calculadora de Sub-Rede IPv4         ========")
 print("======== 0 - Sair do Programa                     ========")
 print("==========================================================")
 
@@ -49,6 +49,20 @@ elif (opcao == 4):
     time.sleep(3)
     print()
     funcoes.pingIN(ip)
+
+elif (opcao == 5):
+    rede = input("Introduza o ip que deseja fazer o calculo (com o cidr): ")
+    print ()
+    print ("A calcular... ")
+    time.sleep(3)
+    print ()
+    res=funcoes.calculadora(rede)
+
+    if (res != "None"):
+        print("============ R E S U L T A D O ===========")
+        print(f"========== Rede: {info[rede]} ===========" )
+
+
 
 
 
