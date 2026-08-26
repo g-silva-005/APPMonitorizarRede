@@ -2,6 +2,8 @@ import time
 import subprocess
 import  platform
 import funcoes
+import os
+
 while True:
 
         print ()
@@ -28,15 +30,19 @@ while True:
                 print ("Sucesso! Tens acesso a internet :)")
             else:
                 print ("Infelizmente nao tens internet, verifica o teu wifi ou o teu router :(")
+            print ()
             input("Pressione qualquer tecla para proseguir...")
-
+            os.system("cls")
+            
         elif (opcao == 2):
             print ("A descobrir IP Local e Nome da Maquina...")
             print ()
             time.sleep(3)
             funcoes.nomeIP_local()
+            print ()
             input("Pressione qualquer tecla para proseguir...")
-
+            os.system("cls")
+            
         elif (opcao == 3):
             print ("Introduz o link do site :)")
             site = input ("\n : ")
@@ -44,7 +50,9 @@ while True:
             time.sleep(3)
             print()
             funcoes.descobrirIPSite(site)
+            print ()
             input("Pressione qualquer tecla para proseguir...")
+            os.system("cls")
 
         elif (opcao == 4):
             ip = input("Introduza o IP que quer fazer o ping: ")
@@ -52,7 +60,9 @@ while True:
             time.sleep(3)
             print()
             funcoes.pingIN(ip)
+            print ()
             input("Pressione qualquer tecla para proseguir...")
+            os.system("cls")
 
         elif (opcao == 5):
             rede = input("Introduza o ip que deseja fazer o calculo (com o cidr): ")
@@ -73,8 +83,10 @@ while True:
 
             else:
                 print("Inseriu um IP invalido ou sem o CIDR :( (ex: 10.0.0.0/24)")
+            print ()
             input("Pressione qualquer tecla para proseguir...")
-            
+            os.system("cls")
+
         elif (opcao == 0):
             print ("A fechar o Programa...")
             time.sleep(3)
@@ -83,7 +95,7 @@ while True:
         else:
             print("Introduziu uma opcao invalida, por favor selecione um numero de 1 a 5 ou 0 se pretender sair.")
             time.sleep(3)
-
+            os.system("cls")
 
 
 
