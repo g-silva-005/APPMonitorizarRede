@@ -14,6 +14,7 @@ while True:
         print("======== 3 - Descobrir o IP de um Site (DNS)      ========")
         print("======== 4 - Fazer Ping a um IP Personalizado     ========")
         print("======== 5 - Calculadora de Sub-Rede IPv4         ========")
+        print("======== 6 - Menu de Administrador de Sistemas    ========")
         print("======== 0 - Sair do Programa                     ========")
         print("==========================================================")
 
@@ -33,7 +34,7 @@ while True:
             print ()
             input("Pressione qualquer tecla para proseguir...")
             os.system("cls")
-            
+
         elif (opcao == 2):
             print ("A descobrir IP Local e Nome da Maquina...")
             print ()
@@ -87,6 +88,21 @@ while True:
             input("Pressione qualquer tecla para proseguir...")
             os.system("cls")
 
+        elif (opcao == 6):
+            while True:
+                print ()
+                
+                print("================== M E N U  de  A D M I S T R A D O R  de  S I S T E M A S ==================")
+                print("======== 1 - Verificar Espaco em Disco (C:)                                          ========")
+                print("======== 2 - Limpar Ficheiros Temporarios do Windows                                 ========")
+                print("======== 3 - Fazer Backup de uma Pasta (.zip)                                        ========")
+                print("======== 4 - Menu de Administrador de Sistemas                                       ========")
+                print("======== 0 - Voltar ao menu anterior                                                 ========")
+                print("=============================================================================================")
+                
+                print ()
+                break
+            
         elif (opcao == 0):
             print ("A fechar o Programa...")
             time.sleep(3)
