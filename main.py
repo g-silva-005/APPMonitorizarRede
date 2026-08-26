@@ -93,16 +93,33 @@ while True:
                 print ()
                 
                 print("================== M E N U  de  A D M I S T R A D O R  de  S I S T E M A S ==================")
-                print("======== 1 - Verificar Espaco em Disco (C:)                                          ========")
+                print("======== 1 - Verificar Espaco em Disco Selecionado                                   ========")
                 print("======== 2 - Limpar Ficheiros Temporarios do Windows                                 ========")
                 print("======== 3 - Fazer Backup de uma Pasta (.zip)                                        ========")
-                print("======== 4 - Menu de Administrador de Sistemas                                       ========")
                 print("======== 0 - Voltar ao menu anterior                                                 ========")
                 print("=============================================================================================")
                 
                 print ()
-                break
-            
+
+                opcao = int(input("Selecione uma opcao: "))
+
+                print()
+
+                if (opcao == 1):
+                    disco = input("Selecione o disco que deseja ver o espaco disponivel: ")
+                    print()
+                    print("A verificar o espaco...")
+                    time.sleep(3)
+                    print()
+                    os.system(f'powershell "Get-PSDrive {disco}| Out-Host"')
+
+
+
+                elif (opcao == 0):
+                    print ("A voltar ao menu anterior...")
+                    time.sleep(3)
+                    break
+
         elif (opcao == 0):
             print ("A fechar o Programa...")
             time.sleep(3)
