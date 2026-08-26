@@ -62,9 +62,9 @@ elif (opcao == 5):
         print("=========================================================")
         print("============          R E S U L T A D O      ============")
         print(f"========== Rede: {res[rede]}               ===========" )
-        print(f"========== Broadcast: {res[broadcast]}     ===========" )
-        print(f"========== Mascara: {res[netmask]}         ===========" )
-        print(f"========== Hosts Disponiveis: {res[hosts]} ===========" )
+        print(f"========== Broadcast: {res['broadcast']}     ===========" )
+        print(f"========== Mascara: {res['netmask']}         ===========" )
+        print(f"========== Hosts Disponiveis: {res['hosts_uteis']} ===========" )
         print("=========================================================")
 
     else:
