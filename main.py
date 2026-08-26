@@ -121,7 +121,7 @@ while True:
                     print ("Apesar de ser ficheiros temporarios, deseja mesmo eliminar todos? (Y/n)")
                     decisao = input(": ")
 
-                    if (decisao == "Y" or "y"):
+                    if (decisao == "Y" or decisao == "y"):
                         codigo_saida = os.system('del /q /f /s "%temp%\*" >nul 2>&1')
 
                         if (codigo_saida == 0):
@@ -138,7 +138,7 @@ while True:
                             input("Pressiona qualquer tecla para continuar...")
                             os.system("cls")
 
-                    elif (decisao == "N"or "n"):
+                    elif (decisao == "N"or decisao == "n"):
                         print ("A voltar para o menu...")
                         time.sleep(3)
                     else:
