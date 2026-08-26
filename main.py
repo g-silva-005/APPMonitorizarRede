@@ -89,6 +89,7 @@ while True:
             os.system("cls")
 
         elif (opcao == 6):
+            os.system("cls")
             while True:
                 print ()
                 
@@ -112,6 +113,9 @@ while True:
                     time.sleep(3)
                     print()
                     os.system(f'powershell "Get-PSDrive {disco}| Out-Host"')
+                    print()
+                    input("Pressione qualquer tecla para continuar...")
+                    os.system("cls")
 
                 elif (opcao == 2):
                     print ("Apesar de ser ficheiros temporarios, deseja mesmo eliminar todos? (Y/n)")
@@ -125,11 +129,14 @@ while True:
                             print("Todos os ficheiros temporarios eliminado com sucesso :) ")
                             print()
                             input("Pressiona qualquer tecla para continuar...")
+                            os.system("cls")
+
                         else:
                             print()
                             print("Nao foram eliminados todos os ficheiros temporarios :( verfica se nao estas a usar nenhum neste momento")
                             print()
                             input("Pressiona qualquer tecla para continuar...")
+                            os.system("cls")
 
                     elif (decisao == "N"or "n"):
                         print ("A voltar para o menu...")
