@@ -61,7 +61,7 @@ def pingIN(ip):
 
 def calculadora(ip_cidr):
     try:
-        ip = ipaddress.IPv4Address(ip_cidr)
+        ip = ipaddress.IPv4Address(ip_cidr, strict=False)
 
         info = {
             "rede": str(ip.network_address),

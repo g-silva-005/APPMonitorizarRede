@@ -58,18 +58,18 @@ elif (opcao == 5):
     print ()
     res=funcoes.calculadora(rede)
 
-    if (res != "None"):
+    if res:
         print("=========================================================")
         print("============          R E S U L T A D O      ============")
-        print(f"========== Rede: {info[rede]}               ===========" )
-        print(f"========== Broadcast: {info[broadcast]}     ===========" )
-        print(f"========== Mascara: {info[netmask]}         ===========" )
-        print(f"========== Hosts Disponiveis: {info[hosts]} ===========" )
+        print(f"========== Rede: {res[rede]}               ===========" )
+        print(f"========== Broadcast: {res[broadcast]}     ===========" )
+        print(f"========== Mascara: {res[netmask]}         ===========" )
+        print(f"========== Hosts Disponiveis: {res[hosts]} ===========" )
         print("=========================================================")
 
     else:
         print("Inseriu um IP invalido ou sem o CIDR :( (ex: 10.0.0.0/24)")
-        
+
 
 
 
