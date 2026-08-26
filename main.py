@@ -141,8 +141,14 @@ while True:
                     elif (decisao == "N"or decisao == "n"):
                         print ("A voltar para o menu...")
                         time.sleep(3)
+                        os.system("cls")
+
                     else:
                         print("Opcao invalida!")
+                        time.sleep(1)
+                        print("A voltar para o menu...")
+                        time.sleep(3)
+                        os.system("cls")
                         
 
                 elif (opcao == 0):
