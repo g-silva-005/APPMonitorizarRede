@@ -33,7 +33,7 @@ Instalação e Uso
 Faz o download ou clone deste repositório:
 
 Bash
-git clone https://github.com/O-TEU-USERNAME/O-NOME-DO-TEU-REPOSITORIO.git
+git clone (https://github.com/g-silva-005/APPMonitorizarRede.git)
 Navega até à pasta do projeto.
 
 Faz duplo clique no ficheiro programa.bat.
