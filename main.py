@@ -74,13 +74,13 @@ while True:
             res=funcoes.calculadora(rede)
 
             if res:
-                print("=========================================================")
-                print("============       R E S U L T A D O         ============")
-                print(f"========== Rede: {res['rede']}                    ============" )
-                print(f"========== Broadcast: {res['broadcast']}             ============" )
-                print(f"========== Mascara: {res['mascara']}            ============" )
-                print(f"========== Hosts Disponiveis: {res['hosts_uteis']}            ============" )
-                print("=========================================================")
+                print("===================================================================")
+                print("============       R E S U L T A D O                   ============")
+                print(f"========== Rede: {res['rede']}                        ============" )
+                print(f"========== Broadcast: {res['broadcast']}              ============" )
+                print(f"========== Mascara: {res['mascara']}                  ============" )
+                print(f"========== Hosts Disponiveis: {res['hosts_uteis']}    ============" )
+                print("===================================================================")
 
             else:
                 print("Inseriu um IP invalido ou sem o CIDR :( (ex: 10.0.0.0/24)")
