@@ -112,10 +112,16 @@ while True:
                     print("A verificar o espaco...")
                     time.sleep(3)
                     print()
-                    os.system(f'powershell "Get-PSDrive {disco}| Out-Host"')
-                    print()
-                    input("Pressione qualquer tecla para continuar...")
-                    os.system("cls")
+                    resultado = os.system(f'powershell "Get-PSDrive {disco} -ErrorAction SilentlyContinue | Out-Host"')
+                    if (resultado == 0):
+                        print (resultado)
+                        print()
+                        input("Pressione qualquer tecla para continuar...")
+                    else:
+                        print("Oops :( Nao tens essa unidade no pc, por favor verifica a letra da unidade que introduziste!")
+                        print()
+                        input("Pressione qualquer tecla para continuar...")
+                        os.system("cls")
 
                 elif (opcao == 2):
                     print ("Apesar de ser ficheiros temporarios, deseja mesmo eliminar todos? (Y/n)")
