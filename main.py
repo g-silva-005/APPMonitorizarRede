@@ -150,7 +150,30 @@ while True:
                         time.sleep(3)
                         os.system("cls")
                         
+                elif (opcao == 3):
+                    print ("Insere o caminho da pasta que desejas fazer o Backup (EX: C:\pasta)")
+                    pastaOR = input(": ")
 
+                    pastaBK = "PastaBackup.zip"
+
+                    print("A fazer o backup, pode demorar um bocadinho...")
+
+                    comando = f'powershell Compress-Archive -Path "{pastaOR}" -DestinationPath "{pastaBK}" -Force'
+
+                    resultado = os.system(comando)
+                    if(comando == 0):
+                        print("Backup feito com sucesso ! A voltar para o menu...")
+                        time.sleep(3)
+                        print()
+                        input("Pressione qualquer tecla para continuar...")
+                        os.system("cls")
+                    else:
+                        print("Backup nao foi concluido, verifica se a pasta existe ou se escreveste bem o caminho")
+                        time.sleep(3)
+                        print()
+                        input("Pressione qualquer tecla para continuar...")
+                        os.system("cls")
+                    
                 elif (opcao == 0):
                     print ("A voltar ao menu anterior...")
                     time.sleep(3)
