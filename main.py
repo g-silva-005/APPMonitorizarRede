@@ -177,6 +177,7 @@ while True:
                 elif (opcao == 0):
                     print ("A voltar ao menu anterior...")
                     time.sleep(3)
+                    os.system("cls")
                     break
 
         elif (opcao == 0):
