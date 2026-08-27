@@ -161,7 +161,7 @@ while True:
                     comando = f'powershell Compress-Archive -Path "{pastaOR}" -DestinationPath "{pastaBK}" -Force'
 
                     resultado = os.system(comando)
-                    if(comando == 0):
+                    if(resultado == 0):
                         print("Backup feito com sucesso ! A voltar para o menu...")
                         time.sleep(3)
                         print()
