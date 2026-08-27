@@ -122,7 +122,7 @@ while True:
                     decisao = input(": ")
 
                     if (decisao == "Y" or decisao == "y"):
-                        codigo_saida = os.system('del /q /f /s "%temp%\*" >nul 2>&1')
+                        codigo_saida = os.system(r'del /q /f /s "%temp%\*" >nul 2>&1')
 
                         if (codigo_saida == 0):
                             print()
@@ -151,7 +151,7 @@ while True:
                         os.system("cls")
                         
                 elif (opcao == 3):
-                    print ("Insere o caminho da pasta que desejas fazer o Backup (EX: C:\pasta)")
+                    print ("Insere o caminho da pasta que desejas fazer o Backup (EX: C:\\pasta)")
                     pastaOR = input(": ")
 
                     pastaBK = "PastaBackup.zip"
