@@ -1,4 +1,4 @@
-#Toolkit de Redes & Automação SysAdmin
+# Toolkit de Redes & Automação SysAdmin
 
 ---
 
@@ -6,7 +6,7 @@ Uma ferramenta de linha de comandos (CLI) desenvolvida em Python para ambientes 
 
 ---
 
-#Funcionalidades
+# Funcionalidades
 O projeto está dividido em dois módulos principais:
 
  Menu de Rede
@@ -30,7 +30,7 @@ Menu de Administração de Sistemas
 
 ---
 
-#Como Executar
+# Como Executar
 
 Pré-requisitos
 
@@ -40,7 +40,7 @@ Pré-requisitos
 
 ---
 
-#Instalação e Uso
+# Instalação e Uso
 Faz o download ou clone deste repositório:
 
 Bash
@@ -53,7 +53,7 @@ Nota: O ficheiro .bat configura automaticamente a cor do terminal, ajusta a past
 
 ---
 
-#Estrutura do Projeto
+# Estrutura do Projeto
 main.py - O motor principal da aplicação, responsável pelos menus interativos e pela interface do utilizador.
 
 funcoes.py - Módulo de suporte contendo funções isoladas e lógica de rede/sistema.
