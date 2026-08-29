@@ -1,10 +1,16 @@
-Toolkit de Redes & Automação SysAdmin
+#Toolkit de Redes & Automação SysAdmin
+
+---
+
 Uma ferramenta de linha de comandos (CLI) desenvolvida em Python para ambientes Windows. Este toolkit reúne as ferramentas de diagnóstico de rede mais essenciais e automatiza tarefas diárias de Administração de Sistemas (SysAdmin) num menu interativo e de fácil utilização.
 
-Funcionalidades
+---
+
+#Funcionalidades
 O projeto está dividido em dois módulos principais:
 
  Menu de Rede
+ 
  - Teste de Conectividade: Verifica o estado da ligação à internet.
 
  - Informações de Rede Local: Descobre instantaneamente o IP local e o nome da máquina (Hostname).
@@ -22,7 +28,9 @@ Menu de Administração de Sistemas
 
  - Sistema de Backups Rápidos: Comprime qualquer diretoria num ficheiro .zip com um único clique.
 
-Como Executar
+---
+
+#Como Executar
 
 Pré-requisitos
 
@@ -30,7 +38,9 @@ Pré-requisitos
 
  - Python 3.x instalado na máquina. (Não são necessárias bibliotecas externas, o projeto usa apenas bibliotecas nativas como os, shutil, time e ipaddress).
 
-Instalação e Uso
+---
+
+#Instalação e Uso
 Faz o download ou clone deste repositório:
 
 Bash
@@ -41,7 +51,9 @@ Faz duplo clique no ficheiro programa.bat.
 
 Nota: O ficheiro .bat configura automaticamente a cor do terminal, ajusta a pasta de trabalho (mesmo se aberto como Administrador) e lança o script Python de forma limpa.
 
-Estrutura do Projeto
+---
+
+#Estrutura do Projeto
 main.py - O motor principal da aplicação, responsável pelos menus interativos e pela interface do utilizador.
 
 funcoes.py - Módulo de suporte contendo funções isoladas e lógica de rede/sistema.
