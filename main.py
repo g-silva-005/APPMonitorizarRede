@@ -113,14 +113,12 @@ while True:
                     time.sleep(3)
                     print()
                     resultado = os.system(f'powershell "Get-PSDrive {disco} -ErrorAction SilentlyContinue | Out-Host"')
-                    print()
-                    input("Pressione qualquer tecla para continuar...")
-                    os.system("cls")
-                    
+                    print()                
                     if (resultado == 0):
                         print (resultado)
                         print()
                         input("Pressione qualquer tecla para continuar...")
+                        os.system("cls")
                     else:
                         print("Oops :( Nao tens essa unidade no pc, por favor verifica a letra da unidade que introduziste!")
                         print()
