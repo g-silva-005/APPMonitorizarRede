@@ -76,10 +76,10 @@ while True:
             if res:
                 print("===================================================================")
                 print("============       R E S U L T A D O                   ============")
-                print(f"========== Rede: {res['rede']}                        ============" )
-                print(f"========== Broadcast: {res['broadcast']}              ============" )
-                print(f"========== Mascara: {res['mascara']}                  ============" )
-                print(f"========== Hosts Disponiveis: {res['hosts_uteis']}    ============" )
+                print(f"========== Rede:              {res['rede']}           ============")
+                print(f"========== Broadcast:         {res['broadcast']}      ============")
+                print(f"========== Mascara:           {res['mascara']}        ============")
+                print(f"========== Hosts Disponiveis: {res['hosts_uteis']}    ============")
                 print("===================================================================")
 
             else:
